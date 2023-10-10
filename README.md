@@ -5,7 +5,7 @@ Presentation website for bussines directed to pokemon automat
 
 [Site](https://poke-mat.vercel.app)
 
-Installation 
+## Installation 
 
     npm create vite@latest
         √ Select a framework: » React
