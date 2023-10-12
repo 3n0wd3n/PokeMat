@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 export const MainHeaderContainer = styled.div`
     display: flex;
     position: relative;
-    min-height: 100vh;
+    min-height: 75vh;
     max-width: 100vw;
     justify-content: center;
     align-items: center;
@@ -12,22 +12,142 @@ export const MainHeaderContainer = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(30%); 
+        filter: brightness(10%); 
     }
 `;
 
-export const MainIntro = styled.p`
+export const MainIntroText = styled.p`
     position: absolute;
     text-align: center;
     top: 50%;
-    font-size: 18px;
+    font-size: 24px;
     color: white;
     font-weight: 100;
     padding: 15px;
+    width: 50vw;
+    @media screen and (max-width: 900px) {
+        width: 75vw;
+        top: 40%;
+    }
+    @media screen and (max-width: 500px) {
+        width: 75vw;
+        top: 30%;
+        font-size: 20px;
+    }
 `;
 export const MainIntroHeading = styled.h1`
     position: absolute;
     top: 30%;
     font-size: 64px;
     color: #ffcb05;
+    @media screen and (max-width: 900px) {
+        top: 25%;
+    }
+    @media screen and (max-width: 500px) {
+        top: 15%;
+    }
+`;
+
+export const MainAbout = styled.section`
+    background-color: #ffcb05;
+    margin: 0;
+    min-height: 30vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    padding: 36px;
+    margin-top: 30vh;
+    & > p {
+        color: white;
+        font-size: 24px;
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+`;
+
+export const MainHideBg = styled.div`
+    min-height: 100vh;
+    max-width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    & > img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        filter: brightness(20%); 
+    }
+`;
+
+export const MainAboutHeading = styled.h2`
+    font-size: 64px;
+`;
+
+export const MainBold = styled.span`
+    font-weight: 900;
+    color: #CAA306;
+`;
+
+export const MainMapHeading = styled(MainAboutHeading)`
+    font-size: 64px;
+`;
+
+export const MainOfferHeading = styled(MainAboutHeading)`
+    font-size: 64px;
+`;
+
+export const MainContactHeading = styled(MainAboutHeading)`
+    font-size: 64px;
+`;
+
+export const MainMap = styled.section`
+    color: #222222;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    background-color: white;
+    min-height: 100vh;
+    align-items: flex-start;
+    & > p {
+        font-size: 24px;
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+`;
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
+export const MainOffer = styled.section`
+    background-color: #A2C5AC;
+    padding: 36px;
+    color: white;
+    min-height: 100vh;
+    margin-top: 35vh;
+    & > p {
+        font-size: 24px;
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+`;
+
+export const MainContact = styled.section`
+    background-color: #264653;
+    padding: 36px;
+    color: white;
+    min-height: 40vh;
+    & > p {
+        font-size: 24px;
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
 `;
