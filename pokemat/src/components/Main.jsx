@@ -6,7 +6,7 @@ export default function Main() {
     return (
         <>  
             <MainHeaderContainer>
-                <img src="../../../public/intro-bg.avif"></img>
+                <img src="../../../public/intro-bg-cards.avif"></img>
                 <MainIntroHeading>PokeMat</MainIntroHeading>
                 <MainIntro>Vítejte na naší stránce plné Pokémon dobrodružství! Prozkoumejte svět Pokémonů prostřednictvím našeho jedinečného automatu, kde můžete zakoupit exkluzivní Pokémon karty a rozšířit svou sbírku. Každá karta je jedinečná a přináší s sebou vzrušující příběh.</MainIntro>
             </MainHeaderContainer>

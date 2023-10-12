@@ -12,7 +12,7 @@ export const MainHeaderContainer = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(40%); 
+        filter: brightness(30%); 
     }
 `;
 
