@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { MainHeaderContainer, MainIntro, MainIntroHeading } from "./Main.style"
 import { Fade, Zoom } from "react-awesome-reveal";
+import bg from '../../public/intro-bg-mix-cards.avif'
 
 export default function Main() {
     return (
         <>  
             <MainHeaderContainer>
-                <img src="../../../public/intro-bg-cards.avif"></img>
+                <img src={bg}></img>
                 <MainIntroHeading>PokeMat</MainIntroHeading>
                 <MainIntro>Vítejte na naší stránce plné Pokémon dobrodružství! Prozkoumejte svět Pokémonů prostřednictvím našeho jedinečného automatu, kde můžete zakoupit exkluzivní Pokémon karty a rozšířit svou sbírku. Každá karta je jedinečná a přináší s sebou vzrušující příběh.</MainIntro>
             </MainHeaderContainer>
