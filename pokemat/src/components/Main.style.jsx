@@ -19,32 +19,28 @@ export const MainHeaderContainer = styled.div`
 export const MainIntroText = styled.p`
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 20vh;
     font-size: 24px;
     color: white;
     font-weight: 100;
     padding: 15px;
     width: 50vw;
     @media screen and (max-width: 900px) {
-        width: 75vw;
-        top: 40%;
+        font-size: 20px;
     }
     @media screen and (max-width: 500px) {
-        width: 75vw;
-        top: 30%;
-        font-size: 20px;
+        font-size: 18px;
+        top: 18vh;
+        width: 60vw;
     }
 `;
 export const MainIntroHeading = styled.h1`
     position: absolute;
-    top: 30%;
+    top: 10vh;
     font-size: 64px;
     color: #ffcb05;
-    @media screen and (max-width: 900px) {
-        top: 25%;
-    }
     @media screen and (max-width: 500px) {
-        top: 15%;
+        top: 8vh;
     }
 `;
 
@@ -86,9 +82,18 @@ export const MainAboutHeading = styled.h2`
     font-size: 64px;
 `;
 
-export const MainBold = styled.span`
+export const MainBoldYellow = styled.span`
     font-weight: 900;
     color: #CAA306;
+`;
+
+export const MainBoldYellowBrigth = styled.span`
+    font-weight: 900;
+    color: #ffcb05;
+`;
+
+export const MainBoldDark = styled(MainBoldYellow)`
+    color: #222222;
 `;
 
 export const MainMapHeading = styled(MainAboutHeading)`
@@ -129,7 +134,6 @@ export const MainOffer = styled.section`
     background-color: #A2C5AC;
     padding: 36px;
     color: white;
-    min-height: 100vh;
     margin-top: 35vh;
     & > p {
         font-size: 24px;
@@ -139,15 +143,63 @@ export const MainOffer = styled.section`
     }
 `;
 
+export const MainOfferContainer = styled.div`
+    display: flex;
+    width: 100%;
+    gap: 23px;
+    overflow-x: scroll;
+    flex-direction: row;
+`;
+
+
+export const MainOfferContainerItem = styled.div `
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 411px;
+    width: 270px;
+    background-color: #2e6171;
+`;
+
+export const MainOfferContainerItemImage = styled.div` 
+    height: 149px;
+    width: 270px;
+    background-color: #798086;
+`
+
 export const MainContact = styled.section`
     background-color: #264653;
     padding: 36px;
     color: white;
-    min-height: 40vh;
     & > p {
         font-size: 24px;
         @media screen and (max-width: 500px) {
             font-size: 20px;
         }
+    }
+`;
+
+export const MainContactInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+    & > span {
+        font-size: 16px;
+    }
+`;
+
+export const MainFooter = styled.footer`
+    min-height: 5vh;
+    max-width: 100vw;
+    padding: 36px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    flex-direction: column;
+    & > span {
+        color: #CAA306;
     }
 `;

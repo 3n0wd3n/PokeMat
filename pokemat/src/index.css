@@ -28,3 +28,17 @@ ul, ol {
 h1, h2 {
   margin: 0;
 }
+
+*::-webkit-scrollbar {
+  height: 5px;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #CAA306;
+  border-radius: 8px;
+}
