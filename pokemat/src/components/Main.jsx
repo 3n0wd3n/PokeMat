@@ -66,7 +66,7 @@ export default function Main() {
                 <p><MainBoldYellowBrigth>Máte otázky</MainBoldYellowBrigth> nebo chcete sdílet své Pokémon dojmy s námi? <MainBoldYellowBrigth>Nebojte se nám napsat!</MainBoldYellowBrigth> Jsme tady pro vás a rádi vám pomůžeme s čímkoli spojeným s naším projektem.</p>
                 <MainContactInfo>
                     <MainBoldYellowBrigth>Kontaktní osoba:</MainBoldYellowBrigth><span> Daniel Holý</span>
-                    <MainBoldYellowBrigth>IČO:</MainBoldYellowBrigth><span> CZ 098 762 222</span>
+                    <MainBoldYellowBrigth>IČO:</MainBoldYellowBrigth><span> 19778732</span>
                     <MainBoldYellowBrigth>Email:</MainBoldYellowBrigth><span> cardmat@info.cz</span>
                 </MainContactInfo>
             </MainContact>
