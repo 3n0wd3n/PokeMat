@@ -6,6 +6,8 @@ import usa from "../assets/america.png";
 import cz from "../assets/czech-republic.svg";
 import hideBg from '../../public/hide-background.jpg';
 import React, { useState } from 'react';
+// import MapContainer from './Map';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 export default function Main() {
     const [translate, setTranslate] = useState(false);
@@ -60,10 +62,11 @@ export default function Main() {
                             <p>You can try our machine <MainBoldYellowBrigth>in the Olympia shopping center near Olomouc</MainBoldYellowBrigth>. You can get there for free on the Olympia bus.</p>
                         </>
                     }
-                    {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2588.030738269645!2d17.304393304197685!3d49.55944317947807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47124d978edc1ed7%3A0x79308fa1f579282d!2sObchodn%C3%AD%20centrum%20Olympia%20Olomouc!5e0!3m2!1scs!2scz!4v1697125032496!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+                {/* <MapContainer>
+                    
+                </MapContainer> */}
                 </MainMap>
             {/* </Container> */}
-            {/* mapa */}
             <MainOffer>
                 {
                     translate ?
