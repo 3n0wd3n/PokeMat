@@ -149,6 +149,7 @@ export const MainOfferContainer = styled.div`
     gap: 23px;
     overflow-x: scroll;
     flex-direction: row;
+    margin: 20px 0 0 0;
 `;
 
 
