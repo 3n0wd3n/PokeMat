@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
-import { MainFlagContainer, MainFooter, MainContactInfo, MainOfferContainerItemImage, MainOfferContainerItem, MainOfferContainer, MainBoldYellowBrigth, MainBoldDark, MainOfferHeading, MainContactHeading, MainContact, MainOffer, MainHideBg, MainBoldYellow, MainMapHeading, Container, MainMap, MainHeaderContainer, MainIntroText, MainIntroHeading, MainAbout, MainAboutHeading } from "./Main.style"
+import { MainContactContainer, MainFlagContainer, MainFooter, MainContactInfo, MainOfferContainerItemImage, MainOfferContainerItem, MainOfferContainer, MainBoldYellowBrigth, MainBoldDark, MainOfferHeading, MainContactHeading, MainContact, MainOffer, MainHideBg, MainBoldYellow, MainMapHeading, Container, MainMap, MainHeaderContainer, MainIntroText, MainIntroHeading, MainAbout, MainAboutHeading } from "./Main.style"
 import { Fade, Zoom } from "react-awesome-reveal";
 import bg from '../../public/intro-bg-cards.png'
 import usa from "../assets/america.png";
 import cz from "../assets/czech-republic.svg";
+import contact from "../assets/undraw_phone.svg";
 import hideBg from '../../public/hide-background.jpg';
 import React, { useState } from 'react';
+
 // import MapContainer from './Map';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 export default function Main() {
     const [translate, setTranslate] = useState(false);
@@ -111,6 +113,7 @@ export default function Main() {
                 </MainOfferContainer>
             </MainOffer>
             <MainContact>
+                <MainContactContainer>
                 {
                     translate ?
                     <>
@@ -133,6 +136,8 @@ export default function Main() {
                         </MainContactInfo>
                     </>
                 }
+                </MainContactContainer>
+                <img src={contact}></img>
             </MainContact>
             <MainFooter>
                 {
