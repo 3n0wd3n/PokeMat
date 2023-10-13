@@ -16,3 +16,8 @@ Presentation website for bussines directed to pokemon automat
     npm install react-a w        
     npm install react-icons --save
     npm install react-router-dom
+
+## Map Integration
+
+[1st Solution](https://blog.logrocket.com/integrating-google-maps-react/)
+[2nd Solution](https://javascript.plainenglish.io/add-a-google-map-to-your-react-app-with-a-snazzy-maps-style-38781edcdc7a)

@@ -12,7 +12,7 @@ export const MainHeaderContainer = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(10%); 
+        filter: brightness(13%); 
     }
 `;
 
@@ -76,6 +76,32 @@ export const MainHideBg = styled.div`
         object-fit: cover;
         filter: brightness(20%); 
     }
+`;
+
+export const MainFlagContainer = styled.div`
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 3;
+  
+  img {
+    transition: transform 0.7s ease-in-out;
+    animation: rotation1 1s;
+  }
+
+  @keyframes rotation1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+
+  &:hover > img {
+    transform: rotate(15deg);
+  }
 `;
 
 export const MainAboutHeading = styled.h2`
