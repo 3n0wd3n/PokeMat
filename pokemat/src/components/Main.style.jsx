@@ -196,7 +196,18 @@ export const MainOfferContainerItemImage = styled.div`
 
 export const MainContact = styled.section`
     background-color: #264653;
+    display: flex;
     padding: 36px;
+    & > img {
+        height: auto;
+        width: 50vw;
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+`;
+
+export const MainContactContainer = styled.div`
     color: white;
     & > p {
         font-size: 24px;
