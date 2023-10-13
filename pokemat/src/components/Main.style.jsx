@@ -192,7 +192,7 @@ export const MainOfferContainerItemImage = styled.div`
     height: 149px;
     width: 270px;
     background-color: #798086;
-`
+`;
 
 export const MainContact = styled.section`
     background-color: #264653;
