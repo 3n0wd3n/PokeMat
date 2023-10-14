@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Monoton', sans-serif;
+  font-family: "Monoton", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -13,19 +13,24 @@ p {
   margin: 0;
 }
 
-a:hover, a:visited, a:link, a:active{
+a:hover,
+a:visited,
+a:link,
+a:active {
   text-decoration: none;
   color: unset;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -39,6 +44,6 @@ h1, h2 {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #CAA306;
+  background: #caa306;
   border-radius: 8px;
 }
