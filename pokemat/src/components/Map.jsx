@@ -22,9 +22,7 @@ const App = () => {
           center={center}
           zoom={16}
         >
-          <Marker
-            position={{ lat: 49.55919264209095, lng: 17.30524088171907 }}
-          />
+          <Marker position={center} />
         </GoogleMap>
       )}
     </MapApp>

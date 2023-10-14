@@ -186,13 +186,15 @@ export const MainOfferContainerItem = styled.div`
   justify-content: center;
   height: 411px;
   width: 270px;
-  background-color: #2e6171;
+  background-color: white;
+  border-radius: 8px;
 `;
 
 export const MainOfferContainerItemImage = styled.div`
   height: 149px;
   width: 270px;
-  background-color: #798086;
+  background-color: white;
+  border-radius: 8px;
 `;
 
 export const MainContact = styled.section`
