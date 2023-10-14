@@ -7,10 +7,10 @@ export default function Home() {
     <>
       <HomeMainContainer>
         <HomeRotationContainer>
-          <img src={reactLogo} className="logo pokeball" alt="React logo" />
+          <img src={reactLogo} className='logo pokeball' alt='React logo' />
         </HomeRotationContainer>
         <HomeH1>
-          <Link to="/Main">See More</Link>
+          <Link to='/Main'>See More</Link>
         </HomeH1>
       </HomeMainContainer>
     </>

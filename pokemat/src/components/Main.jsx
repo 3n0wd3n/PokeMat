@@ -44,17 +44,17 @@ export default function Main() {
           <img
             onClick={() => setTranslate(!translate)}
             src={usa}
-            alt="USA Flag"
-            height="30px"
-            width="30px"
+            alt='USA Flag'
+            height='30px'
+            width='30px'
           />
         ) : (
           <img
             onClick={() => setTranslate(!translate)}
             src={cz}
-            alt="CZ Flag"
-            height="30px"
-            width="30px"
+            alt='CZ Flag'
+            height='30px'
+            width='30px'
           />
         )}
       </MainFlagContainer>
@@ -251,7 +251,7 @@ export default function Main() {
         )}
         <MainBoldYellowBrigth>
           <span>
-            <Link to="/">Back To Home</Link>
+            <Link to='/'>Back To Home</Link>
           </span>
         </MainBoldYellowBrigth>
       </MainFooter>
