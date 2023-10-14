@@ -106,6 +106,7 @@ export const MainFlagContainer = styled.div`
 
 export const MainAboutHeading = styled.h2`
   font-size: 64px;
+  line-height: normal;
 `;
 
 export const MainBoldYellow = styled.span`
@@ -143,6 +144,7 @@ export const MainMap = styled.section`
   background-color: white;
   min-height: 100vh;
   align-items: flex-start;
+  position: relative;
   & > p {
     font-size: 24px;
     @media screen and (max-width: 500px) {

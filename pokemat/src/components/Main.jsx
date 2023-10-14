@@ -31,6 +31,7 @@ import cz from "../assets/czech-republic.svg";
 import contact from "../assets/undraw_phone.svg";
 import hideBg from "../../public/hide-background.jpg";
 import React, { useState } from "react";
+import MyApp from "./Map";
 
 // import MapContainer from './Map';
 // import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
@@ -144,9 +145,7 @@ export default function Main() {
             </p>
           </>
         )}
-        {/* <MapContainer>
-                    
-                </MapContainer> */}
+        <MyApp></MyApp>
       </MainMap>
       {/* </Container> */}
       <MainOffer>

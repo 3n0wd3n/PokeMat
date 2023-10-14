@@ -1,21 +1,34 @@
-// import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import { useMemo } from "react";
+import { MapApp } from "./Map.style";
+import "./Map.css";
 
-// export class MapContainer extends Component {
-//   render() {
-//     return (
-//       <Map google={this.props.google} zoom={14}>
-//         <Marker onClick={this.onMarkerClick} name={"Current location"} />
+const App = () => {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: "AIzaSyDW8iT1wH4Jgh-i54KCca1DCbl2mlwsQSY",
+  });
+  const center = useMemo(
+    () => ({ lat: 49.55919264209095, lng: 17.30524088171907 }),
+    []
+  );
 
-//         <InfoWindow onClose={this.onInfoWindowClose}>
-//           <div>
-//             <h1>{this.state.selectedPlace.name}</h1>
-//           </div>
-//         </InfoWindow>
-//       </Map>
-//     );
-//   }
-// }
+  return (
+    <MapApp>
+      {!isLoaded ? (
+        <h1>Loading...</h1>
+      ) : (
+        <GoogleMap
+          mapContainerClassName='map-container'
+          center={center}
+          zoom={16}
+        >
+          <Marker
+            position={{ lat: 49.55919264209095, lng: 17.30524088171907 }}
+          />
+        </GoogleMap>
+      )}
+    </MapApp>
+  );
+};
 
-// export default GoogleApiWrapper({
-//   apiKey: "AIzaSyCNAKW9Gw9zta7F0JfWEWNoHfs88s0nv80",
-// })(MapContainer);
+export default App;
